@@ -14,6 +14,7 @@ class SwormTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        Sworm.site = "http://www.site.com"
     }
     
     override func tearDown() {
@@ -33,4 +34,9 @@ class SwormTests: XCTestCase {
         }
     }
     
+    func testMountResourceURLBase() {
+        let url = Sworm.mountResourceURL()
+        XCTAssert(url == "http://www.site.com/sworms")
+    }
+
 }

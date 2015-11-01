@@ -11,192 +11,124 @@ import Foundation
 
 import Foundation
 import Alamofire
+import Pluralize_swift
 
-protocol ActiveModel {
-    var id: Int! { get set }
-    
-    static func resourceName() -> String
-    func resourceName() -> String
-}
-
-class BaseModel: ActiveModel, ResponseObjectSerializable {
+class Sworm: ResponseObjectSerializable {
     var id: Int!
     var errors: Dictionary<String, Array<String>>?
+
+    static var site: String!
     
-    class func resourceName() -> String {
-        return "base"
+    class func resource() -> String? {
+        return NSStringFromClass(self).componentsSeparatedByString(".").last!.lowercaseString.pluralize()
     }
     
-    func resourceName() -> String {
-        return "base"
-    }
+    // MARK: Initializers
     
     @objc required init(response: NSHTTPURLResponse, representation: AnyObject) {
+        self.id = representation.valueForKeyPath("id") as! Int
+    }
+    
+    init() {
         
     }
     
-    init(){
-        
-    }
+    // MARK: Get objects
     
-    class func fetch<T: ResponseObjectSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(path)
+    class func get<T: ResponseObjectSerializable>(id: Int?, path: String?, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        let url = self.mountResourceURL(id, path: path)
         
         Alamofire.request(.GET, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
             completionHandler(response)
         }
     }
     
-    class func delete<T: ResponseObjectSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(path)
+    class func get<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        self.get(nil, path: nil, parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    class func get<T: ResponseObjectSerializable>(id: Int, completionHandler: (Response<T, NSError>) -> Void) {
+        self.get(id, path: nil, parameters: Dictionary<String, AnyObject>(), completionHandler: completionHandler)
+    }
+    
+    class func get<T: ResponseObjectSerializable>(id: Int, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        self.get(id, path: nil, parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    // MARK: Get collections
+    
+    class func get<T: ResponseCollectionSerializable>(parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
+        return self.get("", parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    class func get<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
+        let url = self.mountResourceURL(nil, path: path)
+        
+        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (generics: Response<[T], NSError>) in
+            completionHandler(generics)
+        }
+    }
+    
+    // MARK: Creatios
+    
+    class func create<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        self.create(nil, parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    class func create<T: ResponseObjectSerializable>(path: String?, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        let url = self.mountResourceURL(nil, path: path)
+        
+        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
+            completionHandler(generic)
+        }
+    }
+    
+    // MARK: Deletions
+    
+    class func delete<T: ResponseObjectSerializable>(id: Int, path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        let url = self.mountResourceURL(id, path: path)
         
         Alamofire.request(.DELETE, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
             completionHandler(response)
         }
     }
     
-    class func fetch<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        _ = self.mountResourceURL()
-        self.fetch(nil, parameters: parameters, completionHandler: completionHandler)
-    }
-    
-    class func fetchResponse<T: ResponseObjectSerializable>(id: Int, completionHandler: (Response<T, NSError>) -> Void) {
-        self.fetchResponse(id, parameters: Dictionary<String, AnyObject>(), completionHandler: completionHandler)
-    }
-    
-    class func fetchResponse<T: ResponseObjectSerializable>(id: Int, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(id)
+    class func delete<T: ResponseObjectSerializable>(id: Int, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        let url = self.mountResourceURL(id, path: nil)
         
-        Alamofire.request(.GET, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
+        Alamofire.request(.DELETE, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
+            completionHandler(response)
         }
     }
     
-    class func fetchAll<T: ResponseCollectionSerializable>(parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
-        return self.fetchAll("", parameters: parameters, completionHandler: completionHandler)
-    }
+    // MARK: Utilities
     
-    class func fetchAll<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
-        let url = self.mountResourceURL(path)
+    class func mountResourceURL(id: Int?, path: String?) -> String {
+        var baseURL = self.site!
         
-        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (generics: Response<[T], NSError>) in
-            completionHandler(generics)
+        
+        baseURL += "/\(self.resource()!)"
+        
+        if let _id = id {
+            baseURL += "/\(_id)"
         }
-    }
-    
-    class func create<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL()
-        
-        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    class func create<T: ResponseObjectSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(path)
-        
-        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    class func mountResourceURL(path: String?) -> String {
-        var url = self.mountResourceURL()
-        
-        if path != nil && path != "" {
-            url = url + "/" + path!
+        if let _path = path {
+            baseURL += "/\(_path)"
         }
         
-        return url
+        return baseURL
     }
     
-    class func mountResourceURL() -> String! {
-        let className = self.resourceName()
-        return Application.apiURL + Application.apiVersionV1 + className
+    class func mountResourceURL(id: Int) -> String {
+        return self.mountResourceURL(id, path: nil)
     }
     
-    class func mountResourceURL(id: Int!) -> String! {
-        return self.mountResourceURL() + "/\(id)"
+    class func mountResourceURL(path: String) -> String {
+        return self.mountResourceURL(nil, path: path)
     }
     
-    func mountResourceURL() -> String! {
-        let className = self.resourceName()
-        return Application.apiURL + Application.apiVersionV1 + className
-    }
-    
-    func mountResourceURL(id: Int!) -> String! {
-        return self.mountResourceURL() + "/\(id)"
-    }
-    
-    func fetchAll<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (generics: Response<[T], NSError>) in
-            completionHandler(generics)
-        }
-    }
-    
-    func create<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = mountResourceURL()
-        
-        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-        
-    }
-    
-    func create<T: ResponseObjectSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    func create<T: ResponseCollectionSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.POST, url, parameters: parameters).responseCollection { (generic: Response<[T], NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    func update<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        self.update(nil, parameters: parameters, completionHandler: completionHandler)
-    }
-    
-    func update<T: ResponseObjectSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.PUT, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    func patch<T: ResponseObjectSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.PATCH, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    func delete<T: ResponseObjectSerializable>(path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = mountResourceURL(path, id: self.id)
-        
-        Alamofire.request(.DELETE, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
-        }
-    }
-    
-    private func mountResourceURL(path: String?, id: Int) -> String {
-        var url = self.mountResourceURL(id)
-        
-        if path != nil && path != "" {
-            url = url + "/" + path!
-        }
-        
-        return url
+    class func mountResourceURL() -> String {
+        return self.mountResourceURL(nil, path: nil)
     }
     
     func isNewObject() -> Bool {
