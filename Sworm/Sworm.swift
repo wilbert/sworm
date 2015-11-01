@@ -42,11 +42,7 @@ class Sworm: ResponseObjectSerializable {
             completionHandler(response)
         }
     }
-    
-    class func get<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        self.get(nil, path: nil, parameters: parameters, completionHandler: completionHandler)
-    }
-    
+        
     class func get<T: ResponseObjectSerializable>(id: Int, completionHandler: (Response<T, NSError>) -> Void) {
         self.get(id, path: nil, parameters: Dictionary<String, AnyObject>(), completionHandler: completionHandler)
     }
@@ -64,8 +60,8 @@ class Sworm: ResponseObjectSerializable {
     class func get<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
         let url = self.mountResourceURL(nil, path: path)
         
-        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (generics: Response<[T], NSError>) in
-            completionHandler(generics)
+        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (response: Response<[T], NSError>) in
+            completionHandler(response)
         }
     }
     

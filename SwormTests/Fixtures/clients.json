@@ -1,0 +1,14 @@
+{
+    "clients": [
+        {
+            "id": 10,
+            "name": "Clientname",
+            "email": "client@site.com"
+        },
+        {
+            "id": 11,
+            "name": "Anotherclientname",
+            "email": "anotherclient@site.com"
+        }
+    ]
+}
