@@ -34,6 +34,14 @@ class SwormTests: XCTestCase {
         }
     }
     
+    func testingClassName() {
+        XCTAssert(Sworm.className() == "sworm")
+    }
+    
+    func testingResource() {
+        XCTAssert(Sworm.resource() == "sworms")
+    }
+    
     func testMountResourceURLBase() {
         let url = Sworm.mountResourceURL()
         XCTAssert(url == "http://www.site.com/sworms")

@@ -19,8 +19,12 @@ class Sworm: ResponseObjectSerializable {
 
     static var site: String!
     
+    class func className() -> String {
+        return NSStringFromClass(self).componentsSeparatedByString(".").last!.lowercaseString
+    }
+    
     class func resource() -> String? {
-        return NSStringFromClass(self).componentsSeparatedByString(".").last!.lowercaseString.pluralize()
+        return className().pluralize()
     }
     
     // MARK: Initializers
@@ -58,39 +62,37 @@ class Sworm: ResponseObjectSerializable {
     }
     
     class func get<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
-        let url = self.mountResourceURL(nil, path: path)
+        let url = self.mountResourceURL(path)
         
         Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (response: Response<[T], NSError>) in
             completionHandler(response)
         }
     }
     
-    // MARK: Creatios
+    // MARK: Creations
     
     class func create<T: ResponseObjectSerializable>(parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        self.create(nil, parameters: parameters, completionHandler: completionHandler)
+        let url = self.mountResourceURL()
+        
+        Alamofire.request(.POST, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
+            completionHandler(response)
+        }
     }
     
-    class func create<T: ResponseObjectSerializable>(path: String?, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(nil, path: path)
+    // MARK: Updates
+    
+    class func update<T: ResponseObjectSerializable>(id: Int, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
+        let url = self.mountResourceURL(id)
         
-        Alamofire.request(.POST, url, parameters: parameters).responseObject { (generic: Response<T, NSError>) in
-            completionHandler(generic)
+        Alamofire.request(.PATCH, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
+            completionHandler(response)
         }
     }
     
     // MARK: Deletions
     
-    class func delete<T: ResponseObjectSerializable>(id: Int, path: String!, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(id, path: path)
-        
-        Alamofire.request(.DELETE, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
-            completionHandler(response)
-        }
-    }
-    
     class func delete<T: ResponseObjectSerializable>(id: Int, parameters: [String: AnyObject], completionHandler: (Response<T, NSError>) -> Void) {
-        let url = self.mountResourceURL(id, path: nil)
+        let url = self.mountResourceURL(id)
         
         Alamofire.request(.DELETE, url, parameters: parameters).responseObject { (response: Response<T, NSError>) in
             completionHandler(response)
@@ -134,5 +136,7 @@ class Sworm: ResponseObjectSerializable {
             return false
         }
     }
+    
+    
 }
     

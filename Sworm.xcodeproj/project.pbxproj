@@ -14,6 +14,12 @@
 		1D6C7C691BE64C9200E49795 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C681BE64C9200E49795 /* address.json */; settings = {ASSET_TAGS = (); }; };
 		1D6C7C6B1BE64E0300E49795 /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C6A1BE64E0300E49795 /* clients.json */; settings = {ASSET_TAGS = (); }; };
 		1DA60CBB1BE430C5008894AD /* DummyResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60CBA1BE430C5008894AD /* DummyResourceTests.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD65A861BE83BF10005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD65A871BE83BF60005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD65A891BE83C250005C95E /* Sworm+ParamsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; settings = {ASSET_TAGS = (); }; };
+		1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */; settings = {ASSET_TAGS = (); }; };
 		4EF81BA9FFAD5C4604F67CAF /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95A342DCDA2112A5032966E /* Pods_SwormTests.framework */; };
 		73BE19A3B1BE691BBB62CE94 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */; };
 		A4F663291BE4063C008AC04E /* Sworm.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F663281BE4063C008AC04E /* Sworm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +50,10 @@
 		1D6C7C681BE64C9200E49795 /* address.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
 		1D6C7C6A1BE64E0300E49795 /* clients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = clients.json; path = Fixtures/clients.json; sourceTree = "<group>"; };
 		1DA60CBA1BE430C5008894AD /* DummyResourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyResourceTests.swift; sourceTree = "<group>"; };
+		1DD65A851BE83BF10005C95E /* Sworm+Params.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+Params.swift"; sourceTree = "<group>"; };
+		1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+ParamsTest.swift"; sourceTree = "<group>"; };
+		1DD65A8A1BE843090005C95E /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Creation.swift"; sourceTree = "<group>"; };
 		3FD76201A6A0F53413549BB3 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
 		73B18BBB60236B0A79D391D5 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 				A4F663281BE4063C008AC04E /* Sworm.h */,
 				A4F6632A1BE4063C008AC04E /* Info.plist */,
 				A4F663431BE40711008AC04E /* Sworm.swift */,
+				1DD65A851BE83BF10005C95E /* Sworm+Params.swift */,
 			);
 			path = Sworm;
 			sourceTree = "<group>";
@@ -140,6 +151,8 @@
 				1D2544251BE5892800B26005 /* Fixtures */,
 				A4F663361BE4063C008AC04E /* Info.plist */,
 				A4F663341BE4063C008AC04E /* SwormTests.swift */,
+				1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */,
+				1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */,
 			);
 			path = SwormTests;
 			sourceTree = "<group>";
@@ -148,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				A4F663401BE406C6008AC04E /* Alamofire+Request.swift */,
+				1DD65A8A1BE843090005C95E /* Dictionary.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -359,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F663441BE40711008AC04E /* Sworm.swift in Sources */,
+				1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */,
+				1DD65A861BE83BF10005C95E /* Sworm+Params.swift in Sources */,
 				A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,9 +383,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */,
+				1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */,
 				1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */,
 				1D38483E1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift in Sources */,
 				A4F663421BE406C6008AC04E /* Alamofire+Request.swift in Sources */,
+				1DD65A891BE83C250005C95E /* Sworm+ParamsTest.swift in Sources */,
+				1DD65A871BE83BF60005C95E /* Sworm+Params.swift in Sources */,
 				A4F663451BE40711008AC04E /* Sworm.swift in Sources */,
 				1DA60CBB1BE430C5008894AD /* DummyResourceTests.swift in Sources */,
 				A4F663351BE4063C008AC04E /* SwormTests.swift in Sources */,
