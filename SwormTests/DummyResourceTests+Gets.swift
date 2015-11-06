@@ -15,6 +15,10 @@ final class Client: Sworm, ResponseCollectionSerializable {
     var name: String!
     var email: String!
     
+    override init() {
+        super.init()
+    }
+    
     required init(response: NSHTTPURLResponse, representation: AnyObject) {
         super.init(response: response, representation: representation)
         

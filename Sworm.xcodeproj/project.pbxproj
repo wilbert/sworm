@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0E1BC01BEC0A0200CDC6DA /* DummyResourceTests+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */; settings = {ASSET_TAGS = (); }; };
+		1D0E1BC21BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */; settings = {ASSET_TAGS = (); }; };
+		1D0E1BC41BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */; settings = {ASSET_TAGS = (); }; };
 		1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2544211BE5882400B26005 /* DummyResourceTests+Gets.swift */; settings = {ASSET_TAGS = (); }; };
 		1D2544241BE5892100B26005 /* client_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D2544231BE5892100B26005 /* client_10.json */; settings = {ASSET_TAGS = (); }; };
 		1D38483E1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38483D1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift */; settings = {ASSET_TAGS = (); }; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		1183EF0C0878015D998B4B7B /* Pods-Sworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.release.xcconfig"; sourceTree = "<group>"; };
+		1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourceTests+Update.swift"; sourceTree = "<group>"; };
+		1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Delete.swift"; sourceTree = "<group>"; };
+		1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+InstanceMethods.swift"; sourceTree = "<group>"; };
 		1D2544211BE5882400B26005 /* DummyResourceTests+Gets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourceTests+Gets.swift"; sourceTree = "<group>"; };
 		1D2544231BE5892100B26005 /* client_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = client_10.json; path = Fixtures/client_10.json; sourceTree = "<group>"; };
 		1D38483D1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourceTests+GetCollections.swift"; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				A4F6632A1BE4063C008AC04E /* Info.plist */,
 				A4F663431BE40711008AC04E /* Sworm.swift */,
 				1DD65A851BE83BF10005C95E /* Sworm+Params.swift */,
+				1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */,
 			);
 			path = Sworm;
 			sourceTree = "<group>";
@@ -153,6 +160,8 @@
 				A4F663341BE4063C008AC04E /* SwormTests.swift */,
 				1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */,
 				1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */,
+				1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */,
+				1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */,
 			);
 			path = SwormTests;
 			sourceTree = "<group>";
@@ -374,6 +383,7 @@
 			files = (
 				A4F663441BE40711008AC04E /* Sworm.swift in Sources */,
 				1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */,
+				1D0E1BC41BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift in Sources */,
 				1DD65A861BE83BF10005C95E /* Sworm+Params.swift in Sources */,
 				A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */,
 			);
@@ -387,7 +397,9 @@
 				1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */,
 				1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */,
 				1D38483E1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift in Sources */,
+				1D0E1BC01BEC0A0200CDC6DA /* DummyResourceTests+Update.swift in Sources */,
 				A4F663421BE406C6008AC04E /* Alamofire+Request.swift in Sources */,
+				1D0E1BC21BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift in Sources */,
 				1DD65A891BE83C250005C95E /* Sworm+ParamsTest.swift in Sources */,
 				1DD65A871BE83BF60005C95E /* Sworm+Params.swift in Sources */,
 				A4F663451BE40711008AC04E /* Sworm.swift in Sources */,

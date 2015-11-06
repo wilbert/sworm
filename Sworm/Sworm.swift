@@ -57,10 +57,6 @@ class Sworm: ResponseObjectSerializable {
     
     // MARK: Get collections
     
-    class func get<T: ResponseCollectionSerializable>(parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
-        return self.get("", parameters: parameters, completionHandler: completionHandler)
-    }
-    
     class func get<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
         let url = self.mountResourceURL(path)
         
