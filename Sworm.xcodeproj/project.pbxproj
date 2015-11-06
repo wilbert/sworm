@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0E1BC01BEC0A0200CDC6DA /* DummyResourceTests+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */; settings = {ASSET_TAGS = (); }; };
-		1D0E1BC21BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */; settings = {ASSET_TAGS = (); }; };
-		1D0E1BC41BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */; settings = {ASSET_TAGS = (); }; };
-		1D0E1BC61BEC306700CDC6DA /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC51BEC306700CDC6DA /* Pluralize.swift */; settings = {ASSET_TAGS = (); }; };
-		1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2544211BE5882400B26005 /* DummyResourceTests+Gets.swift */; settings = {ASSET_TAGS = (); }; };
-		1D2544241BE5892100B26005 /* client_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D2544231BE5892100B26005 /* client_10.json */; settings = {ASSET_TAGS = (); }; };
-		1D38483E1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38483D1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift */; settings = {ASSET_TAGS = (); }; };
-		1D3848401BE6523900AB92A3 /* active_clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D38483F1BE6523900AB92A3 /* active_clients.json */; settings = {ASSET_TAGS = (); }; };
-		1D6C7C691BE64C9200E49795 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C681BE64C9200E49795 /* address.json */; settings = {ASSET_TAGS = (); }; };
-		1D6C7C6B1BE64E0300E49795 /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C6A1BE64E0300E49795 /* clients.json */; settings = {ASSET_TAGS = (); }; };
-		1DA60CBB1BE430C5008894AD /* DummyResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60CBA1BE430C5008894AD /* DummyResourceTests.swift */; settings = {ASSET_TAGS = (); }; };
-		1DD65A861BE83BF10005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; settings = {ASSET_TAGS = (); }; };
-		1DD65A871BE83BF60005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; settings = {ASSET_TAGS = (); }; };
-		1DD65A891BE83C250005C95E /* Sworm+ParamsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */; settings = {ASSET_TAGS = (); }; };
-		1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; settings = {ASSET_TAGS = (); }; };
-		1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; settings = {ASSET_TAGS = (); }; };
-		1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */; settings = {ASSET_TAGS = (); }; };
+		1D0E1BC01BEC0A0200CDC6DA /* DummyResourceTests+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */; };
+		1D0E1BC21BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */; };
+		1D0E1BC41BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */; };
+		1D0E1BC61BEC306700CDC6DA /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC51BEC306700CDC6DA /* Pluralize.swift */; };
+		1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2544211BE5882400B26005 /* DummyResourceTests+Gets.swift */; };
+		1D2544241BE5892100B26005 /* client_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D2544231BE5892100B26005 /* client_10.json */; };
+		1D38483E1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38483D1BE650CF00AB92A3 /* DummyResourceTests+GetCollections.swift */; };
+		1D3848401BE6523900AB92A3 /* active_clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D38483F1BE6523900AB92A3 /* active_clients.json */; };
+		1D6C7C691BE64C9200E49795 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C681BE64C9200E49795 /* address.json */; };
+		1D6C7C6B1BE64E0300E49795 /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D6C7C6A1BE64E0300E49795 /* clients.json */; };
+		1DA60CBB1BE430C5008894AD /* DummyResourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA60CBA1BE430C5008894AD /* DummyResourceTests.swift */; };
+		1DD65A861BE83BF10005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; };
+		1DD65A871BE83BF60005C95E /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; };
+		1DD65A891BE83C250005C95E /* Sworm+ParamsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */; };
+		1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
+		1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
+		1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */; };
 		4EF81BA9FFAD5C4604F67CAF /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95A342DCDA2112A5032966E /* Pods_SwormTests.framework */; };
 		73BE19A3B1BE691BBB62CE94 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */; };
+		A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */; };
+		A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
 		A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F663251BE4063C008AC04E /* Sworm.framework */; };
 		A4F663351BE4063C008AC04E /* SwormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663341BE4063C008AC04E /* SwormTests.swift */; };
 		A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
@@ -64,6 +66,8 @@
 		3FD76201A6A0F53413549BB3 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
 		73B18BBB60236B0A79D391D5 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sworm.podspec; sourceTree = "<group>"; };
+		A4A1CC3F1BED3AA000FCA785 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A4F663251BE4063C008AC04E /* Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6632A1BE4063C008AC04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F6632F1BE4063C008AC04E /* SwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,8 @@
 		A4F6631B1BE4063C008AC04E = {
 			isa = PBXGroup;
 			children = (
+				A4A1CC3F1BED3AA000FCA785 /* LICENSE */,
+				A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */,
 				A4F663271BE4063C008AC04E /* Sworm */,
 				A4F663331BE4063C008AC04E /* SwormTests */,
 				A4F663261BE4063C008AC04E /* Products */,
@@ -281,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */,
+				A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
