@@ -11,7 +11,6 @@ import Foundation
 
 import Foundation
 import Alamofire
-import Pluralize_swift
 
 class Sworm: ResponseObjectSerializable {
     var id: Int!

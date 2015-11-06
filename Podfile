@@ -4,7 +4,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 def common_pods
-    pod 'Pluralize.swift',                         git: 'https://github.com/wilbert/Pluralize.swift'
+    
 end
 
 target 'Sworm' do
@@ -16,4 +16,3 @@ target 'SwormTests' do
     common_pods
     pod 'Mockingjay',                              '1.1.0'
 end
-
