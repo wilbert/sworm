@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author       = { "Wilbert Ribeiro" => "wkelyson@gmail.com" }
   s.source       = { :git => "https://github.com/wilbert/sworm.git", :tag => "0.0.1" }
   s.source_files = "Sworm/*"
-  s.platform     = :ios, '9.1'
+  s.platform     = :ios, '9.0'
   s.dependency "Alamofire", "~> 3.0"
 end
