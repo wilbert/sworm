@@ -57,6 +57,14 @@ class Sworm: ResponseObjectSerializable {
     
     // MARK: Get collections
     
+    class func get<T: ResponseCollectionSerializable>(parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
+        let url = self.mountResourceURL("")
+        
+        Alamofire.request(.GET, url, parameters: parameters).responseCollection  { (response: Response<[T], NSError>) in
+            completionHandler(response)
+        }
+    }
+    
     class func get<T: ResponseCollectionSerializable>(path: String, parameters: [String: AnyObject], completionHandler: (Response<[T], NSError>) -> Void ) {
         let url = self.mountResourceURL(path)
         
