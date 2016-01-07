@@ -30,7 +30,7 @@ extension Alamofire.Request {
             case .Success(let value):
                 if let response = response
                 {
-                    if response.statusCode >= 500 {
+                    if response.statusCode >= 400 {
                         let failureReason = "Response error"
                         let error = Error.errorWithCode(.StatusCodeValidationFailed, failureReason: failureReason)
                         return .Failure(error)
@@ -77,7 +77,7 @@ extension Alamofire.Request {
             switch result {
             case .Success(let value):
                 if let response = response {
-                    if response.statusCode >= 500 {
+                    if response.statusCode >= 400 {
                         let failureReason = "Response error"
                         let error = Error.errorWithCode(.StatusCodeValidationFailed, failureReason: failureReason)
                         return Result.Failure(error)
