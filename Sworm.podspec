@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "Sworm"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Sworm is a Swift ORM library for RESTfull APIs."
   s.description  = "Sworm is a client library for RESTfull Apis created to be simple and easy to use."
   s.homepage     = "https://github.com/wilbert/sworm"
   s.license      = "MIT"
   s.author       = { "Wilbert Ribeiro" => "wkelyson@gmail.com" }
-  s.source       = { :git => "https://github.com/wilbert/sworm.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/wilbert/sworm.git", :tag => "0.0.4" }
   s.source_files = "Sworm/*"
 
   s.ios.deployment_target = '9.0'
