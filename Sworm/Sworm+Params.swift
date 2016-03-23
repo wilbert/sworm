@@ -10,15 +10,16 @@ import Foundation
 
 extension Sworm {
     func toParams() -> Dictionary<String, Any> {
-        var params = Dictionary<String, Any>()
-        
-        let mirror = Mirror(reflecting: self)
-        let superClassMirror = mirror.superclassMirror()!
-        
-        params = self.childrenDictionary(superClassMirror)
-        params.update(self.childrenDictionary(mirror))
-        
-        return params
+        //        var params = Dictionary<String, Any>()
+        //
+        //        let mirror = Mirror(reflecting: self)
+        //        let superClassMirror = mirror.superclassMirror()!
+        //
+        //        params = self.childrenDictionary(superClassMirror)
+        //        params.update(self.childrenDictionary(mirror))
+        //
+        //        return params
+        return Dictionary<String, Any>()
     }
     
     private func childrenDictionary(mirror: Mirror) -> Dictionary<String, Any> {
