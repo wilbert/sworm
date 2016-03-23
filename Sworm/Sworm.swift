@@ -7,9 +7,6 @@
 //
 
 import Foundation
-
-
-import Foundation
 import Alamofire
 
 class Sworm: ResponseObjectSerializable {
