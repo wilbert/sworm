@@ -24,19 +24,30 @@
 		1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
 		1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
 		1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */; };
-		66E4CD8F652E911C62145FF5 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */; };
+		3C44C7615E49753928F7E465 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54AD1B1A4AF220F41CE9274 /* Pods_Sworm.framework */; };
+		75BC2721FCAE0AE3BD2CF4E4 /* Pods_Sworm_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC3D27878A21837E3C0E815 /* Pods_Sworm_watchOS.framework */; };
 		A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */; };
 		A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
 		A4A1CC421BED41C500FCA785 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC411BED41C500FCA785 /* Podfile */; };
 		A4A616291C3E9D2E00B44266 /* Inflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A616281C3E9D2E00B44266 /* Inflection.swift */; };
 		A4BE42511CA33EE1002E5186 /* Sworm watchos.h in Headers */ = {isa = PBXBuildFile; fileRef = A4BE42501CA33EE1002E5186 /* Sworm watchos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BE42561CA34034002E5186 /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
+		A4BE42571CA34034002E5186 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
+		A4BE42581CA34034002E5186 /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC51BEC306700CDC6DA /* Pluralize.swift */; };
+		A4BE42591CA34034002E5186 /* Inflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A616281C3E9D2E00B44266 /* Inflection.swift */; };
+		A4BE425A1CA34034002E5186 /* Sworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663431BE40711008AC04E /* Sworm.swift */; };
+		A4BE425B1CA34034002E5186 /* Sworm+Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A851BE83BF10005C95E /* Sworm+Params.swift */; };
+		A4BE425C1CA34034002E5186 /* Sworm+InstanceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */; };
+		A4BE425D1CA340AB002E5186 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC411BED41C500FCA785 /* Podfile */; };
+		A4BE425E1CA340AB002E5186 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
+		A4BE425F1CA340AB002E5186 /* Sworm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */; };
 		A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F663251BE4063C008AC04E /* Sworm.framework */; };
 		A4F663351BE4063C008AC04E /* SwormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663341BE4063C008AC04E /* SwormTests.swift */; };
 		A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
 		A4F663421BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
 		A4F663441BE40711008AC04E /* Sworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663431BE40711008AC04E /* Sworm.swift */; };
 		A4F663451BE40711008AC04E /* Sworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663431BE40711008AC04E /* Sworm.swift */; };
-		D2D51401A1F6820F4D20C338 /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */; };
+		DDC7D7D5E9AA0B300E476E4D /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93B9D6176261BE07137B691 /* Pods_SwormTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D36EC4E39A0099538E8FD6 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CC3D27878A21837E3C0E815 /* Pods_Sworm_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sworm_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourceTests+Update.swift"; sourceTree = "<group>"; };
 		1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Delete.swift"; sourceTree = "<group>"; };
 		1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+InstanceMethods.swift"; sourceTree = "<group>"; };
@@ -65,17 +78,16 @@
 		1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+ParamsTest.swift"; sourceTree = "<group>"; };
 		1DD65A8A1BE843090005C95E /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Creation.swift"; sourceTree = "<group>"; };
-		634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
-		6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
-		8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.release.xcconfig"; sourceTree = "<group>"; };
+		2844843B438969C8E9F772BB /* Pods-Sworm watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm watchOS/Pods-Sworm watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7FF6D7805752E73B4B8956 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DB5D2178DB1799F87D8DA7F /* Pods-Sworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.release.xcconfig"; sourceTree = "<group>"; };
+		759F293DAE99272A7E0C1B37 /* Pods-Sworm watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm watchOS/Pods-Sworm watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sworm.podspec; sourceTree = "<group>"; };
 		A4A1CC3F1BED3AA000FCA785 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A4A1CC411BED41C500FCA785 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A4A616281C3E9D2E00B44266 /* Inflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inflection.swift; sourceTree = "<group>"; };
 		A4BE42481CA31E35002E5186 /* Sworm copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sworm copy-Info.plist"; path = "/Users/wilbertribeiro/apps/Xcode/sworm/Sworm copy-Info.plist"; sourceTree = "<absolute>"; };
-		A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Sworm watchos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BE424E1CA33EE1002E5186 /* Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BE42501CA33EE1002E5186 /* Sworm watchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sworm watchos.h"; sourceTree = "<group>"; };
 		A4BE42521CA33EE1002E5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F663251BE4063C008AC04E /* Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +97,9 @@
 		A4F663361BE4063C008AC04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F663401BE406C6008AC04E /* Alamofire+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Request.swift"; sourceTree = "<group>"; };
 		A4F663431BE40711008AC04E /* Sworm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sworm.swift; sourceTree = "<group>"; };
-		F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A93B9D6176261BE07137B691 /* Pods_SwormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9322D9B17AC5499CD6D1BD7 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
+		D54AD1B1A4AF220F41CE9274 /* Pods_Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BC2721FCAE0AE3BD2CF4E4 /* Pods_Sworm_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E4CD8F652E911C62145FF5 /* Pods_Sworm.framework in Frameworks */,
+				3C44C7615E49753928F7E465 /* Pods_Sworm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,22 +124,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */,
-				D2D51401A1F6820F4D20C338 /* Pods_SwormTests.framework in Frameworks */,
+				DDC7D7D5E9AA0B300E476E4D /* Pods_SwormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19CC255F38F6125B831FB7C6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */,
-				6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1D2544251BE5892800B26005 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,17 +140,6 @@
 				1D38483F1BE6523900AB92A3 /* active_clients.json */,
 			);
 			name = Fixtures;
-			sourceTree = "<group>";
-		};
-		2A04CF26981546C9D0DC8923 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */,
-				8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */,
-				F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */,
-				7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		A4BE424F1CA33EE1002E5186 /* Sworm watchos */ = {
@@ -166,9 +161,9 @@
 				A4F663331BE4063C008AC04E /* SwormTests */,
 				A4BE424F1CA33EE1002E5186 /* Sworm watchos */,
 				A4F663261BE4063C008AC04E /* Products */,
-				2A04CF26981546C9D0DC8923 /* Pods */,
-				19CC255F38F6125B831FB7C6 /* Frameworks */,
 				A4BE42481CA31E35002E5186 /* Sworm copy-Info.plist */,
+				D353F649FC0FBAB7958141B0 /* Pods */,
+				AC0E9C1C432D96505A891D33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,7 +172,7 @@
 			children = (
 				A4F663251BE4063C008AC04E /* Sworm.framework */,
 				A4F6632F1BE4063C008AC04E /* SwormTests.xctest */,
-				A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */,
+				A4BE424E1CA33EE1002E5186 /* Sworm.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +217,29 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		AC0E9C1C432D96505A891D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D54AD1B1A4AF220F41CE9274 /* Pods_Sworm.framework */,
+				0CC3D27878A21837E3C0E815 /* Pods_Sworm_watchOS.framework */,
+				A93B9D6176261BE07137B691 /* Pods_SwormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D353F649FC0FBAB7958141B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9322D9B17AC5499CD6D1BD7 /* Pods-Sworm.debug.xcconfig */,
+				5DB5D2178DB1799F87D8DA7F /* Pods-Sworm.release.xcconfig */,
+				2844843B438969C8E9F772BB /* Pods-Sworm watchOS.debug.xcconfig */,
+				759F293DAE99272A7E0C1B37 /* Pods-Sworm watchOS.release.xcconfig */,
+				04D36EC4E39A0099538E8FD6 /* Pods-SwormTests.debug.xcconfig */,
+				3C7FF6D7805752E73B4B8956 /* Pods-SwormTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -243,22 +261,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A4BE424D1CA33EE1002E5186 /* Sworm watchos */ = {
+		A4BE424D1CA33EE1002E5186 /* Sworm watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchos" */;
+			buildConfigurationList = A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchOS" */;
 			buildPhases = (
+				04E7901A61B3776FF723411D /* 📦 Check Pods Manifest.lock */,
 				A4BE42491CA33EE1002E5186 /* Sources */,
 				A4BE424A1CA33EE1002E5186 /* Frameworks */,
 				A4BE424B1CA33EE1002E5186 /* Headers */,
 				A4BE424C1CA33EE1002E5186 /* Resources */,
+				9D56B73893A6DDAFD97E689A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Sworm watchos";
+			name = "Sworm watchOS";
 			productName = "Sworm watchos";
-			productReference = A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */;
+			productReference = A4BE424E1CA33EE1002E5186 /* Sworm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A4F663241BE4063C008AC04E /* Sworm */ = {
@@ -337,7 +357,7 @@
 			targets = (
 				A4F663241BE4063C008AC04E /* Sworm */,
 				A4F6632E1BE4063C008AC04E /* SwormTests */,
-				A4BE424D1CA33EE1002E5186 /* Sworm watchos */,
+				A4BE424D1CA33EE1002E5186 /* Sworm watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +367,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BE425D1CA340AB002E5186 /* Podfile in Resources */,
+				A4BE425E1CA340AB002E5186 /* LICENSE in Resources */,
+				A4BE425F1CA340AB002E5186 /* Sworm.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +397,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04E7901A61B3776FF723411D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0560A38E6F4BDDDA0B4036A2 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +457,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sworm/Pods-Sworm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D56B73893A6DDAFD97E689A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sworm watchOS/Pods-Sworm watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B9EFDC222FA7F194DDCBD780 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +509,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BE42561CA34034002E5186 /* Alamofire+Request.swift in Sources */,
+				A4BE42571CA34034002E5186 /* Dictionary.swift in Sources */,
+				A4BE42581CA34034002E5186 /* Pluralize.swift in Sources */,
+				A4BE42591CA34034002E5186 /* Inflection.swift in Sources */,
+				A4BE425A1CA34034002E5186 /* Sworm.swift in Sources */,
+				A4BE425B1CA34034002E5186 /* Sworm+Params.swift in Sources */,
+				A4BE425C1CA34034002E5186 /* Sworm+InstanceMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +565,7 @@
 /* Begin XCBuildConfiguration section */
 		A4BE42541CA33EE1002E5186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2844843B438969C8E9F772BB /* Pods-Sworm watchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -515,7 +576,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.espn.brazil.Sworm-watchos";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sworm;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -525,6 +586,7 @@
 		};
 		A4BE42551CA33EE1002E5186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759F293DAE99272A7E0C1B37 /* Pods-Sworm watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -535,7 +597,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.espn.brazil.Sworm-watchos";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sworm;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -634,7 +696,7 @@
 		};
 		A4F6633A1BE4063C008AC04E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */;
+			baseConfigurationReference = B9322D9B17AC5499CD6D1BD7 /* Pods-Sworm.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -655,7 +717,7 @@
 		};
 		A4F6633B1BE4063C008AC04E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */;
+			baseConfigurationReference = 5DB5D2178DB1799F87D8DA7F /* Pods-Sworm.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -675,7 +737,7 @@
 		};
 		A4F6633D1BE4063C008AC04E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */;
+			baseConfigurationReference = 04D36EC4E39A0099538E8FD6 /* Pods-SwormTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -686,7 +748,7 @@
 		};
 		A4F6633E1BE4063C008AC04E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */;
+			baseConfigurationReference = 3C7FF6D7805752E73B4B8956 /* Pods-SwormTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -698,13 +760,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchos" */ = {
+		A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4BE42541CA33EE1002E5186 /* Debug */,
 				A4BE42551CA33EE1002E5186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F6631F1BE4063C008AC04E /* Build configuration list for PBXProject "Sworm" */ = {
 			isa = XCConfigurationList;
