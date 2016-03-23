@@ -24,8 +24,7 @@
 		1DD65A8B1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
 		1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD65A8A1BE843090005C95E /* Dictionary.swift */; };
 		1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */; };
-		4EF81BA9FFAD5C4604F67CAF /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95A342DCDA2112A5032966E /* Pods_SwormTests.framework */; };
-		73BE19A3B1BE691BBB62CE94 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */; };
+		66E4CD8F652E911C62145FF5 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */; };
 		A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */; };
 		A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
 		A4A1CC421BED41C500FCA785 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC411BED41C500FCA785 /* Podfile */; };
@@ -36,6 +35,7 @@
 		A4F663421BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
 		A4F663441BE40711008AC04E /* Sworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663431BE40711008AC04E /* Sworm.swift */; };
 		A4F663451BE40711008AC04E /* Sworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663431BE40711008AC04E /* Sworm.swift */; };
+		D2D51401A1F6820F4D20C338 /* Pods_SwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1183EF0C0878015D998B4B7B /* Pods-Sworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.release.xcconfig"; sourceTree = "<group>"; };
 		1D0E1BBF1BEC0A0200CDC6DA /* DummyResourceTests+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourceTests+Update.swift"; sourceTree = "<group>"; };
 		1D0E1BC11BEC0BF300CDC6DA /* DummyResourcesTests+Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Delete.swift"; sourceTree = "<group>"; };
 		1D0E1BC31BEC0C6F00CDC6DA /* Sworm+InstanceMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+InstanceMethods.swift"; sourceTree = "<group>"; };
@@ -65,9 +64,11 @@
 		1DD65A881BE83C250005C95E /* Sworm+ParamsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sworm+ParamsTest.swift"; sourceTree = "<group>"; };
 		1DD65A8A1BE843090005C95E /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		1DFF98551BE6D16C003B32CE /* DummyResourcesTests+Creation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DummyResourcesTests+Creation.swift"; sourceTree = "<group>"; };
-		3FD76201A6A0F53413549BB3 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
-		73B18BBB60236B0A79D391D5 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
-		9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.debug.xcconfig"; sourceTree = "<group>"; };
+		6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sworm/Pods-Sworm.release.xcconfig"; sourceTree = "<group>"; };
 		A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sworm.podspec; sourceTree = "<group>"; };
 		A4A1CC3F1BED3AA000FCA785 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A4A1CC411BED41C500FCA785 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -79,8 +80,7 @@
 		A4F663361BE4063C008AC04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F663401BE406C6008AC04E /* Alamofire+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Request.swift"; sourceTree = "<group>"; };
 		A4F663431BE40711008AC04E /* Sworm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sworm.swift; sourceTree = "<group>"; };
-		AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95A342DCDA2112A5032966E /* Pods_SwormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BE19A3B1BE691BBB62CE94 /* Pods_Sworm.framework in Frameworks */,
+				66E4CD8F652E911C62145FF5 /* Pods_Sworm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,18 +97,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */,
-				4EF81BA9FFAD5C4604F67CAF /* Pods_SwormTests.framework in Frameworks */,
+				D2D51401A1F6820F4D20C338 /* Pods_SwormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15D724430B003D67B976A2E9 /* Frameworks */ = {
+		19CC255F38F6125B831FB7C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */,
-				D95A342DCDA2112A5032966E /* Pods_SwormTests.framework */,
+				634B6EAF6D582CED351EB32E /* Pods_Sworm.framework */,
+				6E72721FFA5FCDA17A565BEB /* Pods_SwormTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +124,17 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
+		2A04CF26981546C9D0DC8923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */,
+				8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */,
+				F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */,
+				7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4F6631B1BE4063C008AC04E = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +144,8 @@
 				A4F663271BE4063C008AC04E /* Sworm */,
 				A4F663331BE4063C008AC04E /* SwormTests */,
 				A4F663261BE4063C008AC04E /* Products */,
-				AF8B758DA08FF0A62C72F717 /* Pods */,
-				15D724430B003D67B976A2E9 /* Frameworks */,
+				2A04CF26981546C9D0DC8923 /* Pods */,
+				19CC255F38F6125B831FB7C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,17 +198,6 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		AF8B758DA08FF0A62C72F717 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3FD76201A6A0F53413549BB3 /* Pods-Sworm.debug.xcconfig */,
-				1183EF0C0878015D998B4B7B /* Pods-Sworm.release.xcconfig */,
-				9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */,
-				73B18BBB60236B0A79D391D5 /* Pods-SwormTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -215,12 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F663391BE4063C008AC04E /* Build configuration list for PBXNativeTarget "Sworm" */;
 			buildPhases = (
-				27401947FA78697BF88D2E5A /* Check Pods Manifest.lock */,
+				0560A38E6F4BDDDA0B4036A2 /* 📦 Check Pods Manifest.lock */,
 				A4F663201BE4063C008AC04E /* Sources */,
 				A4F663211BE4063C008AC04E /* Frameworks */,
 				A4F663221BE4063C008AC04E /* Headers */,
 				A4F663231BE4063C008AC04E /* Resources */,
-				2FD9730A25CB39DC74180C69 /* Copy Pods Resources */,
+				732804E3FCB3ED6B6D761AAB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,12 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F6633C1BE4063C008AC04E /* Build configuration list for PBXNativeTarget "SwormTests" */;
 			buildPhases = (
-				E26DE4B5CE190269B83741A6 /* Check Pods Manifest.lock */,
+				2AD526FF4C9CEAD703338A1F /* 📦 Check Pods Manifest.lock */,
 				A4F6632B1BE4063C008AC04E /* Sources */,
 				A4F6632C1BE4063C008AC04E /* Frameworks */,
 				A4F6632D1BE4063C008AC04E /* Resources */,
-				C47F54F391BE5DFD6233CE9A /* Embed Pods Frameworks */,
-				3D0B971CA457381B16F73549 /* Copy Pods Resources */,
+				B9EFDC222FA7F194DDCBD780 /* 📦 Embed Pods Frameworks */,
+				BFB3067FC5240699AD692D09 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,14 +313,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27401947FA78697BF88D2E5A /* Check Pods Manifest.lock */ = {
+		0560A38E6F4BDDDA0B4036A2 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +328,29 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2FD9730A25CB39DC74180C69 /* Copy Pods Resources */ = {
+		2AD526FF4C9CEAD703338A1F /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		732804E3FCB3ED6B6D761AAB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,29 +358,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sworm/Pods-Sworm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D0B971CA457381B16F73549 /* Copy Pods Resources */ = {
+		B9EFDC222FA7F194DDCBD780 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C47F54F391BE5DFD6233CE9A /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,19 +373,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E26DE4B5CE190269B83741A6 /* Check Pods Manifest.lock */ = {
+		BFB3067FC5240699AD692D09 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -409,7 +409,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A6162A1C3E9D2E00B44266 /* Inflection.swift in Sources */,
 				1DFF98561BE6D16C003B32CE /* DummyResourcesTests+Creation.swift in Sources */,
 				1DD65A8C1BE843090005C95E /* Dictionary.swift in Sources */,
 				1D2544221BE5882400B26005 /* DummyResourceTests+Gets.swift in Sources */,
@@ -527,7 +526,7 @@
 		};
 		A4F6633A1BE4063C008AC04E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FD76201A6A0F53413549BB3 /* Pods-Sworm.debug.xcconfig */;
+			baseConfigurationReference = 6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -546,7 +545,7 @@
 		};
 		A4F6633B1BE4063C008AC04E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1183EF0C0878015D998B4B7B /* Pods-Sworm.release.xcconfig */;
+			baseConfigurationReference = 8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -564,7 +563,7 @@
 		};
 		A4F6633D1BE4063C008AC04E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */;
+			baseConfigurationReference = F829FFD74B5FC51E723624D9 /* Pods-SwormTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -575,7 +574,7 @@
 		};
 		A4F6633E1BE4063C008AC04E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73B18BBB60236B0A79D391D5 /* Pods-SwormTests.release.xcconfig */;
+			baseConfigurationReference = 7B52AA44B457A27B3744C029 /* Pods-SwormTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwormTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
