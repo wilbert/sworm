@@ -28,6 +28,7 @@
 		73BE19A3B1BE691BBB62CE94 /* Pods_Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4A89F07712BF2C98B2CD1 /* Pods_Sworm.framework */; };
 		A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */; };
 		A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
+		A4A1CC421BED41C500FCA785 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC411BED41C500FCA785 /* Podfile */; };
 		A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F663251BE4063C008AC04E /* Sworm.framework */; };
 		A4F663351BE4063C008AC04E /* SwormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663341BE4063C008AC04E /* SwormTests.swift */; };
 		A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
@@ -68,6 +69,7 @@
 		9D66EB77A963D682D94685F6 /* Pods-SwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwormTests/Pods-SwormTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sworm.podspec; sourceTree = "<group>"; };
 		A4A1CC3F1BED3AA000FCA785 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A4A1CC411BED41C500FCA785 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A4F663251BE4063C008AC04E /* Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6632A1BE4063C008AC04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F6632F1BE4063C008AC04E /* SwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 		A4F6631B1BE4063C008AC04E = {
 			isa = PBXGroup;
 			children = (
+				A4A1CC411BED41C500FCA785 /* Podfile */,
 				A4A1CC3F1BED3AA000FCA785 /* LICENSE */,
 				A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */,
 				A4F663271BE4063C008AC04E /* Sworm */,
@@ -287,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A1CC421BED41C500FCA785 /* Podfile in Resources */,
 				A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */,
 				A4A1CC3E1BED3A1000FCA785 /* Sworm.podspec in Resources */,
 			);
