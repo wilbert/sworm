@@ -35,7 +35,7 @@ class SwormTests: XCTestCase {
     }
     
     func testingClassName() {
-        XCTAssert(Sworm.className() == "sworm")
+        XCTAssert(Sworm.className() == "Sworm")
     }
     
     func testingResource() {
