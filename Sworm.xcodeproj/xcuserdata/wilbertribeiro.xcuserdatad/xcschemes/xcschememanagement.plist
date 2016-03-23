@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Sworm watchos.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Sworm.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A4BE42321CA31E34002E5186</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4BE424D1CA33EE1002E5186</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A4F663241BE4063C008AC04E</key>
 		<dict>
 			<key>primary</key>

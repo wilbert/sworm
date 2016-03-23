@@ -29,6 +29,7 @@
 		A4A1CC401BED3AA000FCA785 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC3F1BED3AA000FCA785 /* LICENSE */; };
 		A4A1CC421BED41C500FCA785 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4A1CC411BED41C500FCA785 /* Podfile */; };
 		A4A616291C3E9D2E00B44266 /* Inflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A616281C3E9D2E00B44266 /* Inflection.swift */; };
+		A4BE42511CA33EE1002E5186 /* Sworm watchos.h in Headers */ = {isa = PBXBuildFile; fileRef = A4BE42501CA33EE1002E5186 /* Sworm watchos.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4F663301BE4063C008AC04E /* Sworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F663251BE4063C008AC04E /* Sworm.framework */; };
 		A4F663351BE4063C008AC04E /* SwormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663341BE4063C008AC04E /* SwormTests.swift */; };
 		A4F663411BE406C6008AC04E /* Alamofire+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F663401BE406C6008AC04E /* Alamofire+Request.swift */; };
@@ -73,6 +74,10 @@
 		A4A1CC3F1BED3AA000FCA785 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A4A1CC411BED41C500FCA785 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A4A616281C3E9D2E00B44266 /* Inflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inflection.swift; sourceTree = "<group>"; };
+		A4BE42481CA31E35002E5186 /* Sworm copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sworm copy-Info.plist"; path = "/Users/wilbertribeiro/apps/Xcode/sworm/Sworm copy-Info.plist"; sourceTree = "<absolute>"; };
+		A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Sworm watchos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BE42501CA33EE1002E5186 /* Sworm watchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sworm watchos.h"; sourceTree = "<group>"; };
+		A4BE42521CA33EE1002E5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F663251BE4063C008AC04E /* Sworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F6632A1BE4063C008AC04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4F6632F1BE4063C008AC04E /* SwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A4BE424A1CA33EE1002E5186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4F663211BE4063C008AC04E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +147,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A4BE424F1CA33EE1002E5186 /* Sworm watchos */ = {
+			isa = PBXGroup;
+			children = (
+				A4BE42501CA33EE1002E5186 /* Sworm watchos.h */,
+				A4BE42521CA33EE1002E5186 /* Info.plist */,
+			);
+			path = "Sworm watchos";
+			sourceTree = "<group>";
+		};
 		A4F6631B1BE4063C008AC04E = {
 			isa = PBXGroup;
 			children = (
@@ -143,9 +164,11 @@
 				A4A1CC3D1BED3A1000FCA785 /* Sworm.podspec */,
 				A4F663271BE4063C008AC04E /* Sworm */,
 				A4F663331BE4063C008AC04E /* SwormTests */,
+				A4BE424F1CA33EE1002E5186 /* Sworm watchos */,
 				A4F663261BE4063C008AC04E /* Products */,
 				2A04CF26981546C9D0DC8923 /* Pods */,
 				19CC255F38F6125B831FB7C6 /* Frameworks */,
+				A4BE42481CA31E35002E5186 /* Sworm copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +177,7 @@
 			children = (
 				A4F663251BE4063C008AC04E /* Sworm.framework */,
 				A4F6632F1BE4063C008AC04E /* SwormTests.xctest */,
+				A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +225,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A4BE424B1CA33EE1002E5186 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BE42511CA33EE1002E5186 /* Sworm watchos.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4F663221BE4063C008AC04E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +243,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A4BE424D1CA33EE1002E5186 /* Sworm watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchos" */;
+			buildPhases = (
+				A4BE42491CA33EE1002E5186 /* Sources */,
+				A4BE424A1CA33EE1002E5186 /* Frameworks */,
+				A4BE424B1CA33EE1002E5186 /* Headers */,
+				A4BE424C1CA33EE1002E5186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sworm watchos";
+			productName = "Sworm watchos";
+			productReference = A4BE424E1CA33EE1002E5186 /* Sworm watchos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		A4F663241BE4063C008AC04E /* Sworm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F663391BE4063C008AC04E /* Build configuration list for PBXNativeTarget "Sworm" */;
@@ -262,6 +312,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Wilbert Ribeiro";
 				TargetAttributes = {
+					A4BE424D1CA33EE1002E5186 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					A4F663241BE4063C008AC04E = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -284,11 +337,19 @@
 			targets = (
 				A4F663241BE4063C008AC04E /* Sworm */,
 				A4F6632E1BE4063C008AC04E /* SwormTests */,
+				A4BE424D1CA33EE1002E5186 /* Sworm watchos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A4BE424C1CA33EE1002E5186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4F663231BE4063C008AC04E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +452,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A4BE42491CA33EE1002E5186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4F663201BE4063C008AC04E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +503,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A4BE42541CA33EE1002E5186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sworm watchos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.espn.brazil.Sworm-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A4BE42551CA33EE1002E5186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sworm watchos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.espn.brazil.Sworm-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		A4F663371BE4063C008AC04E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A56888E872F5A9BDC94EFB0 /* Pods-Sworm.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -535,6 +644,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sworm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sworm.Sworm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A26B22EFFC5E7212CBC8721 /* Pods-Sworm.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -554,6 +665,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sworm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sworm.Sworm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,6 +698,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A4BE42531CA33EE1002E5186 /* Build configuration list for PBXNativeTarget "Sworm watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4BE42541CA33EE1002E5186 /* Debug */,
+				A4BE42551CA33EE1002E5186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A4F6631F1BE4063C008AC04E /* Build configuration list for PBXProject "Sworm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
